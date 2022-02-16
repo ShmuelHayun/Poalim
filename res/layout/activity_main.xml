@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/main_background_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:textSize="25sp"
+            android:hint="@string/insertChar"
+            android:id="@+id/searchEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:background="@drawable/background_border"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/ic_baseline_search_24"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="9dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/result_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_margin="100dp"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/favorites_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:visibility="gone"
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loader_gif"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

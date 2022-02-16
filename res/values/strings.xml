@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PoalimAssignment</string>
+    <string name="insertChar">Search Hero </string>
+    <string name="characterName">Name</string>
+    <string-array name="favorites_characters_names">
+        <item>Abraxas</item>
+        <item>Gladiator</item>
+        <item>Ironman</item>
+    </string-array>
+
+    <string-array name="favorites_characters_urls">
+        <item>https://www.superherodb.com/pictures2/portraits/10/100/181.jpg</item>
+        <item>https://www.superherodb.com/pictures2/portraits/10/100/1521.jpg</item>
+        <item>https://www.superherodb.com/pictures2/portraits/10/100/85.jpg</item>
+    </string-array>
+
+</resources>
